@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3 D3 part solution </title>
+    <style>
+        /* box plot */
+        .box {
+            fill: steelblue;
+            opacity: 0.7;
+        }
+        .median-line {
+            stroke: red;
+            stroke-width: 2;
+        }
+        .axis-label {
+            font-size: 12px;
+        }
+
+        /* bar plot */
+        .bar {
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .platform-group text {
+            font-size: 12px;
+        }        
+        .legend text {
+            font-size: 12px;
+        }
+
+        /* line plot */
+        .line {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+        }
+        .axis-label {
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solution for the box-plot</h1>
+    <div id="boxplot"></div>
+
+    <h1>Solution for the side-by-side bar plot</h1>
+    <div id="barplot"></div>
+
+    <h1>Solution for the line plot</h1>
+    <div id="lineplot"></div>
+    
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+    <script src='template.js'></script>   
+</body>
+</html>
